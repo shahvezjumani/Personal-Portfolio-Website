@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahvez - Portfolio Website</title>
+  <meta name="description"
+    content="My personal Portfolio website consists of some of my projects, services and contact details." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="assests/images/logo.png" alt="logo" srcset="" class="logo" /></a>
+    <nav class="nav-bar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/about.html" class="nav-link" target="_blank">About</a></li>
+        <li class="nav-item"><a href="/services.html" class="nav-link" target="_blank">Services</a></li>
+        <li class="nav-item"><a href="/portfolio.html" class="nav-link" target="_blank">Portfolio</a></li>
+        <li class="nav-item"><a href="/contact.html" class="nav-link" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-navbar-buttons">
+      
+      <ion-icon name="close-circle-outline"></ion-icon>
+      <ion-icon name="menu"></ion-icon>
+    </div>
+  </header>
+
+  <!-- =====================
+    Hero Section Start 
+    =======================  -->
+
+  <main>
+    <section class="hero-section section">
+      <div class="container grid grid-two-column">
+        <!-- Left Part Hero Section -->
+        <div class="hero-section-data">
+          <p>this is me</p>
+          <h1>shahvez jumani</h1>
+          <p>
+            a Computer Science student, and a Front-end Developer. Having a
+            passion for coding, and 1+ years of experience in the field of
+            Front-end Development. I am a passionate to be a AI engineer.
+          </p>
+          <div>
+            <a href="#" class="button" target="_blank">Hire Me</a>
+          </div>
+        </div>
+        <!-- Right Part Hero Section -->
+        <div class="hero-section-image">
+          <img src="assests/images/Untitled-a.png" alt="this is me shahvez jumani" srcset="" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================
+    Bio Data Section Start 
+    =======================  -->
+
+  <!-- <section class="bio-section section">
+    <div class="container grid grid-two-column">
+      Left Part Bio Section
+      <div class="bio-image">
+        <img src="assests/images/bio-section-image.jpg" alt="bio section image" srcset="" />
+      </div>
+      Right Part Bio Section
+      <div class="bio-data">
+        <h2 class="common-heading">My Bio-Data</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          repellendus ad nesciunt accusantium quos hic, ullam id nobis
+          repellat placeat quaerat exercitationem, at repudiandae doloremque
+          inventore iusto eveniet ex officia!
+        </p>
+        <div class="bio-data-stats">
+          <div class="bio-stats">
+            <h3>Design</h3>
+            <div class="bio-progress-bar">
+              <span>80%</span>
+            </div>
+          </div>
+          <div class="bio-stats">
+            <h3>JavaScript</h3>
+            <div class="bio-progress-bar bio-progress-bar-2">
+              <span>70%</span>
+            </div>
+          </div>
+          <div class="bio-stats">
+            <h3>Python</h3>
+            <div class="bio-progress-bar bio-progress-bar-3">
+              <span>90%</span>
+            </div>
+          </div>
+          <div class="bio-stats">
+            <h3>HTML</h3>
+            <div class="bio-progress-bar bio-progress-bar-4">
+              <span>30%</span>
+            </div>
+          </div>
+          <div class="bio-stats">
+            <h3>CSS</h3>
+            <div class="bio-progress-bar bio-progress-bar-5">
+              <span>67%</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="#" class="button" target="_blank">download cv</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- =====================
+    Portfolio Section Start 
+    =======================  -->
+<!-- 
+  <section class="portfolio-section section">
+    <div class="container">
+      <div class="portfolio-section-info container">
+        <h2 class="common-heading">Latest Works</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+          officiis odio quis, delectus amet perspiciatis praesentium, nam
+          facere omnis nihil eum cum, voluptatibus quae molestias autem. Aut
+          architecto error ab.
+        </p>
+      </div>
+      <div class="portfolio-section-menu">
+        <div href="#" class="button p-button" data-button-num="1">
+          Designs
+        </div>
+        <div href="#" class="button p-button" data-button-num="2">
+          Websites
+        </div>
+        <div href="#" class="button p-button" data-button-num="3">Python</div>
+      </div>
+      <div class="portfolio-section-projects grid grid-three-column">
+        <div class="img-overlay p-button--1">
+          <img src="assests/images/portfolio-section-1.jpg" alt="my_works" height="210px" loading="lazy" />
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 1</a>
+          </div>
+        </div>
+        <div class="img-overlay button--1">
+          <img src="assests/images/portfolio-section-2.jpg" alt="my_works" height="210px" loading="lazy" />
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 2</a>
+          </div>
+        </div>
+        <div class="img-overlay button--1">
+          <img src="assests/images/portfolio-section-3.jpg" alt="my_works" height="210px" loading="lazy" />
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 3</a>
+          </div>
+        </div>
+        <div class="img-overlay button--1">
+          <img src="assests/images/portfolio-section-4.jpg" alt="my_works" height="210px" loading="lazy" />
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 4</a>
+          </div>
+        </div>
+        <div class="img-overlay button--1">
+          <img src="assests/images/portfolio-section-5.jpg" alt="my_works" height="210px" loading="lazy" />
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 5</a>
+          </div>
+        </div>
+        <div class="img-overlay button--1">
+          <img src="assests/images/portfolio-section-6.jpg" alt="my_works" height="210px" loading="lazy" />
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 6</a>
+          </div>
+        </div>
+        <div class="img-overlay button--1">
+          <img src="assests/images/portfolio-section-7.jpg" alt="my_works" height="210px" loading="lazy" />
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 7</a>
+          </div>
+        </div>
+        <div class="img-overlay button--1">
+          <img src="assests/images/portfolio-section-8.jpg" alt="my_works" height="210px" loading="lazy" />
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 8</a>
+          </div>
+        </div>
+        <div class="img-overlay button--1">
+          <img src="assests/images/portfolio-section-9.jpg" alt="my_works" height="210px" loading="lazy" />
+          <div class="overlay">
+            <a href="#" target="_blank" class="common-heading">Project 9</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- =====================
+    Numbers Section Start 
+    =======================  -->
+
+  <section class="numbers-section section">
+    <div class="numbers-section-container">
+      <div class="container grid grid-four-column">
+        <div class="projects">
+          <h3>2000+</h3>
+          <p>project completed</p>
+        </div>
+        <div class="clients">
+          <h3>2000+</h3>
+          <p>happy clients</p>
+        </div>
+        <div class="cups-of-coffee">
+          <h3>2000+</h3>
+          <p>cups of coffee</p>
+        </div>
+        <div class="professionals">
+          <h3>2000+</h3>
+          <p>real professionals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+    Services Section Start 
+    =======================  -->
+
+  <!-- <section class="services-section section">
+    <div class="container">
+      <h2 class="common-heading">Service Offers</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+        quae nulla, aliquid aspernatur architecto eum ut repellat repellendus
+        natus nemo asperiores porro, voluptate consequatur sequi voluptas
+        quia. Nemo, magni voluptatibus!
+      </p>
+      <div class="services-cards grid grid-three-column">
+        <div class="service-box">
+          <ion-icon name="desktop" class="service-icon"></ion-icon>
+          <h3>Web Design</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            consequuntur magni unde porro dolorum nostrum, maiores animi cum,
+            sint iusto ut sequi dolore. Ducimus, quas.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="logo-javascript" class="service-icon"></ion-icon>
+          <h3>JavaScript</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            consequuntur magni unde porro dolorum nostrum, maiores animi cum,
+            sint iusto ut sequi dolore. Ducimus, quas.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="logo-angular" class="service-icon"></ion-icon>
+          <h3>Angular JS</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            consequuntur magni unde porro dolorum nostrum, maiores animi cum,
+            sint iusto ut sequi dolore. Ducimus, quas.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="logo-html5" class="service-icon"></ion-icon>
+          <h3>HTML5</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            consequuntur magni unde porro dolorum nostrum, maiores animi cum,
+            sint iusto ut sequi dolore. Ducimus, quas.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="logo-css3" class="service-icon"></ion-icon>
+          <h3>CSS3</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            consequuntur magni unde porro dolorum nostrum, maiores animi cum,
+            sint iusto ut sequi dolore. Ducimus, quas.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="logo-python" class="service-icon"></ion-icon>
+          <h3>Python</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            consequuntur magni unde porro dolorum nostrum, maiores animi cum,
+            sint iusto ut sequi dolore. Ducimus, quas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- =====================
+    Testimonail Section Start 
+    =======================  -->
+
+  <section class="testimonials-section section">
+    <div class="container">
+      <h2 class="common-heading">testimonials</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-message">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi aliquam eligendi blanditiis consectetur ullam ratione
+                accusantium error cum hic recusandae! Totam possimus
+                cupiditate eligendi ab ipsam voluptatem iste porro nobis!
+              </p>
+            </div>
+            <div class="testimonail-client grid grid-two-column">
+              <div class="client-image">
+                <img src="assests/images/personal_picture.jpg" alt="" />
+              </div>
+              <div class="client-details">
+                <h3>John Doe</h3>
+                <p>web designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-message">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi aliquam eligendi blanditiis consectetur ullam ratione
+                accusantium error cum hic recusandae! Totam possimus
+                cupiditate eligendi ab ipsam voluptatem iste porro nobis!
+              </p>
+            </div>
+            <div class="testimonail-client grid grid-two-column">
+              <div class="client-image">
+                <img src="assests/images/personal_picture.jpg" alt="" />
+              </div>
+              <div class="client-details">
+                <h3>John Doe</h3>
+                <p>web designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-message">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi aliquam eligendi blanditiis consectetur ullam ratione
+                accusantium error cum hic recusandae! Totam possimus
+                cupiditate eligendi ab ipsam voluptatem iste porro nobis!
+              </p>
+            </div>
+            <div class="testimonail-client grid grid-two-column">
+              <div class="client-image">
+                <img src="assests/images/personal_picture.jpg" alt="" />
+              </div>
+              <div class="client-details">
+                <h3>John Doe</h3>
+                <p>web designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-message">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi aliquam eligendi blanditiis consectetur ullam ratione
+                accusantium error cum hic recusandae! Totam possimus
+                cupiditate eligendi ab ipsam voluptatem iste porro nobis!
+              </p>
+            </div>
+            <div class="testimonail-client grid grid-two-column">
+              <div class="client-image">
+                <img src="assests/images/personal_picture.jpg" alt="" />
+              </div>
+              <div class="client-details">
+                <h3>John Doe</h3>
+                <p>web designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-message">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi aliquam eligendi blanditiis consectetur ullam ratione
+                accusantium error cum hic recusandae! Totam possimus
+                cupiditate eligendi ab ipsam voluptatem iste porro nobis!
+              </p>
+            </div>
+            <div class="testimonail-client grid grid-two-column">
+              <div class="client-image">
+                <img src="assests/images/personal_picture.jpg" alt="" />
+              </div>
+              <div class="client-details">
+                <h3>John Doe</h3>
+                <p>web designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-message">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi aliquam eligendi blanditiis consectetur ullam ratione
+                accusantium error cum hic recusandae! Totam possimus
+                cupiditate eligendi ab ipsam voluptatem iste porro nobis!
+              </p>
+            </div>
+            <div class="testimonail-client grid grid-two-column">
+              <div class="client-image">
+                <img src="assests/images/personal_picture.jpg" alt="" />
+              </div>
+              <div class="client-details">
+                <h3>John Doe</h3>
+                <p>web designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-message">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi aliquam eligendi blanditiis consectetur ullam ratione
+                accusantium error cum hic recusandae! Totam possimus
+                cupiditate eligendi ab ipsam voluptatem iste porro nobis!
+              </p>
+            </div>
+            <div class="testimonail-client grid grid-two-column">
+              <div class="client-image">
+                <img src="assests/images/personal_picture.jpg" alt="" />
+              </div>
+              <div class="client-details">
+                <h3>John Doe</h3>
+                <p>web designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+  </section>
+
+  <!-- =====================
+    Freelanceing Section Start 
+    =======================  -->
+
+  <section class="freelancing-section section">
+    <div class="freelance-section-container overlay"></div>
+    <div class="container">
+      <h2>I am <span>available</span> for freelancing</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ipsa excepturi voluptate laborum sequi
+        reiciendis eos itaque blanditiis labore explicabo.</p>
+      <a href="#" class="button">hire me</a>
+    </div>
+  </section>
+
+  <!-- =====================
+    Contact Us Section Start 
+    =======================  -->
+
+  <!-- <section class="contact-section section">
+    <div class="container">
+      <h2 class="common-heading">Contact us</h2>
+      <div class="contact-form">
+        <form action="#">
+          <div class="grid grid-two-column contact-form-container">
+            <div class="item">
+              <label for="username">Name: </label>
+              <input type="text" name="username" id="username" placeholder="enter your name">
+            </div>
+            <div class="item">
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" placeholder="enter your email">
+            </div>
+          </div>
+          <div class="item">
+            <label for="subject">Subject: </label>
+            <input type="text" name="subject" id="subject" placeholder="enter your subject">
+          </div>
+          <div class="item">
+            <fieldset>
+              <legend>Message</legend>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="enter your message"></textarea>
+            </fieldset>
+          </div>
+          <div>
+            <input type="submit" value="submit" class="button">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- =====================
+    Footer Section Start 
+    =======================  -->
+
+  <footer class="section footer-section">
+    <div class="container ">
+      <div class="grid grid-four-column">
+        <div class="footer-about">
+          <h3>About</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui laborum totam explicabo optio odio
+            temporibus dolorem suscipit ad asperiores.</p>
+        </div>
+        <div class="footer-section-links">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#" class="footer-links">Home</a></li>
+            <li><a href="#" class="footer-links">About</a></li>
+            <li><a href="#" class="footer-links">Services</a></li>
+            <li><a href="#" class="footer-links">Portfolio</a></li>
+            <li><a href="#" class="footer-links">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#" class="footer-links">Web Design</a></li>
+            <li><a href="#" class="footer-links">JavaScript Development</a></li>
+            <li><a href="#" class="footer-links">Python Projects</a></li>
+            <li><a href="#" class="footer-links">HTML5 & CSS3</a></li>
+            <li><a href="#" class="footer-links">React</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h3>Have a Question?</h3>
+          <address>
+            <div>
+              <p>
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                Shikarpur, Sindh, Pakistan
+              </p>
+            </div>
+            <div>
+              <p>
+                <span><i class="fa-solid fa-phone"></i></span>
+                <a href="#">+923456789</a>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <a href="#">sha685789@gmail.com</a>
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+      <div class="footer-social-links">
+        <div>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div>
+          <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div>
+          <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div>
+          <a href=""><i class="fa-solid fa-code"></i></a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright &copy; All rights reserved by <a href="#">Shahvez Jumani</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
